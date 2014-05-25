@@ -65,15 +65,15 @@ public class MainActivity extends Activity {
 
        // factTextView.setText(factString);
 
-        final Button switchToMaps = (Button) findViewById(R.id.menuBtn);
+        final Button switchToMaps = (Button) findViewById(R.id.mapsBtn);
         final Button switchToMenu = (Button) findViewById(R.id.menuBtn);
         final Button switchToProfile = (Button) findViewById(R.id.profileBtn);
 
         switchToMaps.setOnClickListener(new View.OnClickListener() {
             @Override
 
-            public void onClick(View view) {
-                Intent act2 = new Intent(view.getContext(), MainMenuActivity.class);
+        public void onClick(View view) {
+                Intent act2 = new Intent(view.getContext(), MapsActivity.class);
                 startActivity(act2);
             }
         });
