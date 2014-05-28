@@ -1,13 +1,8 @@
 package edu.ucsd.troll.app;
 
-import android.app.ProgressDialog;
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
@@ -20,7 +15,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import org.apache.http.message.BasicNameValuePair;
 
@@ -83,7 +77,7 @@ public class MainActivity extends Activity {
            @Override
 
            public void onClick(View view) {
-                Intent act3 = new Intent(view.getContext(), MainMenuActivity.class);
+                Intent act3 = new Intent(view.getContext(), LocationMenuActivity.class);
                 startActivity(act3);
            }
         });

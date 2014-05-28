@@ -14,7 +14,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-public class MainMenuActivity extends Activity {
+public class MenuActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainMenuActivity extends Activity {
         switchact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent act1 = new Intent(view.getContext(),MainActivity.class);
+                Intent act1 = new Intent(view.getContext(),LocationMenuActivity.class);
                 startActivity(act1);
             }
         });
